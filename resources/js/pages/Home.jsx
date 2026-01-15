@@ -80,7 +80,7 @@ const Home = () => {
                         {treatments.slice(0, 6).map((item) => (
                             <div key={item.id} className="bg-white rounded-xl shadow-md overflow-hidden">
                                 <img
-                                    src={item.image ? `/uploads/${item.image}` : '/images/hairstyling.jpeg'}
+                                    src={item.image || '/images/hairstyling.jpeg'}
                                     className="w-full h-44 object-cover"
                                 />
                                 <div className="p-6">
